@@ -33,7 +33,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px", backgroundColor: "#f0f0f0" }}>
       <h1>Student CRUDS</h1>
 
       <input
@@ -43,22 +43,14 @@ function App() {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <button onClick={addStudent}>
-        Add
-      </button>
+      <button onClick={addStudent}>Add</button>
 
       <ul>
         {students.map((student) => (
           <li key={student.id}>
             {student.name}
 
-            <button
-              onClick={() =>
-                deleteStudent(student.id)
-              }
-            >
-              Delete
-            </button>
+            <button onClick={() => deleteStudent(student.id)}>Delete</button>
           </li>
         ))}
       </ul>
