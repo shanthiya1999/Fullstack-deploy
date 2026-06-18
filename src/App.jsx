@@ -33,7 +33,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{ padding: "20px", backgroundColor: "#f0f0f0" }}>
+    <div style={{ padding: "20px", backgroundColor: "#e21e1e" }}>
       <h1>Student CRUDS</h1>
 
       <input
