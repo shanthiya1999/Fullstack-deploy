@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Student CRUD</h1>
+      <h1>Student CRUDS</h1>
 
       <input
         type="text"
